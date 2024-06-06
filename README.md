@@ -4,7 +4,7 @@ Welcome to my personal portfolio website, built with **HTML**, **Tailwind CSS**,
 
 ## 🚀 Project Overview
 
-This is my professional portfolio showcasing my skills, projects, and experience as a [Your Profession, e.g., Web Developer, Designer]. It is designed to be fully responsive and user-friendly.
+This is my professional portfolio showcasing my skills, projects, and experience as a Front end developer. It is designed to be fully responsive and user-friendly.
 
 ## 🛠 Technologies Used
 
