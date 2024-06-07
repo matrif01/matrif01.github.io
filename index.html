@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/My-Logo.svg" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <title>Marouane Tamimi</title>
+  </head>
+  <body class="bg-black text-white">
+    <header>
+      <nav
+        class="pt-10 flex items-center justify-between gap-5 md:max-w-7xl md:mx-auto px-4"
+      >
+        <h1 class="text-xl sm:text-3xl font-bold">&lt; MatRif &#8725;&gt;</h1>
+
+        <ul class="font-medium text-xl items-center gap-10 hidden lg:flex">
+          <li class="hover:border-b-2 pb-1 hover:border-white px-1">
+            <a href="#abt">About</a>
+          </li>
+          <li class="hover:border-b-2 pb-1 hover:border-white px-1">
+            <a href="#sklz">Skills</a>
+          </li>
+          <li class="hover:border-b-2 pb-1 hover:border-white px-1">
+            <a href="#edu">Education</a>
+          </li>
+          <li class="hover:border-b-2 pb-1 hover:border-white px-1">
+            <a href="#exp">Experience</a>
+          </li>
+
+          <li class="hover:border-b-2 pb-1 hover:border-white px-1">
+            <a href="#pjcts">Projects</a>
+          </li>
+          <li class="hover:border-b-2 pb-1 hover:border-white px-1">
+            <a href="#cntct">Contact</a>
+          </li>
+        </ul>
+
+        <div class="relative lg:hidden" x-data="{isOpen: false}">
+          <button class="focus:outline-none" @click="isOpen=!isOpen ">
+            <i class="fa-solid fa-bars text-3xl" style="color: #ffffff"></i>
+          </button>
+
+          <ul
+            class="absolute bg-black border-white border-2 shadow overflow-hidden rounded w-80 max-w-xl mx-auto border mt-3 right-1 z-20"
+            x-show="isOpen"
+            @click.away="isOpen=false"
+            @keydown.escape="isOpen=false"
+          >
+            <li class="border-b border-white">
+              <a href="#abt" class="px-3 py-3 text-sm text-white text-center">
+                <span class="block px-4 font-semibold text-2xl">About</span>
+              </a>
+            </li>
+
+            <li class="border-b border-white">
+              <a href="#sklz" class="px-3 py-3 text-sm text-white text-center">
+                <span class="block px-4 font-semibold text-2xl">Skills</span>
+              </a>
+            </li>
+
+            <li class="border-b border-white">
+              <a href="#edu" class="px-3 py-3 text-sm text-white text-center">
+                <span class="block px-4 font-semibold text-2xl">Education</span>
+              </a>
+            </li>
+
+            <li class="border-b border-white">
+              <a href="#exp" class="px-3 py-3 text-sm text-white text-center">
+                <span class="block px-4 font-semibold text-2xl"
+                  >Experience</span
+                >
+              </a>
+            </li>
+
+            <li class="border-b border-white">
+              <a
+                href="#prjcts"
+                class="px-3 py-3 text-sm text-white text-center"
+              >
+                <span class="block px-4 font-semibold text-2xl">Projects</span>
+              </a>
+            </li>
+            <li class="border-b border-white">
+              <a href="#cntct" class="px-3 py-3 text-sm text-white text-center">
+                <span class="block px-4 font-semibold text-2xl">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="md:max-w-7xl md:mx-auto px-6">
+        <div class="pt-20 flex flex-col items-center gap-5">
+          <div>
+            <img src="./img/profile-pic1.png" alt="profile-pic" class="w-64" />
+          </div>
+          <div class="text-center space-y-4">
+            <h1 class="font-medium text-2xl sm:text-4xl">Marouane Tamimi</h1>
+            <h2 class="text-xl sm:text-2xl">Front end Developer</h2>
+          </div>
+          <div>
+            <ul class="flex items-center gap-8">
+              <li>
+                <a href="https://codepen.io/matrif01"
+                  ><img
+                    src="./icons/codepen-icon.svg"
+                    alt="codepen-icon"
+                    class="w-[30px] sm:w-[40px] hover:scale-125"
+                /></a>
+              </li>
+              <li>
+                <a href="https://dev.to/matrif01"
+                  ><img
+                    src="./icons/dev-to.svg"
+                    alt="devto"
+                    class="w-[30px] sm:w-[40px] hover:scale-150"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/matrif01"
+                  ><img
+                    src="./icons/github-icon.png"
+                    alt="github-icon"
+                    class="w-[30px] sm:w-[40px] hover:scale-125"
+                /></a>
+              </li>
+              <li>
+                <a href="https://x.com/MatRif01"
+                  ><img
+                    src="./icons/twitter-logo-2.svg"
+                    alt="twitter"
+                    class="w-[30px] sm:w-[40px] hover:scale-125"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/marouane-tamimi/"
+                  ><img
+                    src="./icons/linkedin-icon.png"
+                    alt="linkedin-icon-"
+                    class="w-[30px] sm:w-[40px] hover:scale-125"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://drive.google.com/drive/folders/14ehcmyDYpAjv4f45PfobRKgmsMmiZ4_H?usp=sharing" target="_blank"
+            ><button
+              class="text-lg sm:text-2xl font-medium py-2 px-8 rounded-3xl border-2 hover:bg-white hover:text-black transition duration-500"
+            >
+              Download CV
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+    <section
+      id="abt"
+      class="my-48 md:my-52 md:max-w-6xl md:mx-auto px-6 scroll-mt-56"
+    >
+      <h1 class="text-3xl sm:text-5xl text-center font-semibold">About Me</h1>
+      <p
+        class="text-xl sm:text-2xl font-medium my-10 py-8 px-5 md:max-w-2xl md:mx-auto border-white border-2 rounded-lg hover:text-black hover:bg-white transition duration-500"
+      >
+        Hello! I'm Marouane , a passionate front-end developer dedicated to
+        creating dynamic and responsive websites. Proficient in HTML, CSS,
+        JavaScript, and modern frameworks & libraries like React, I thrive on
+        bringing innovative designs to life. My goal is to craft seamless user
+        experiences and visually appealing interfaces. Let's build something
+        amazing together!
+      </p>
+    </section>
+    <section id="sklz" class="my-52 md:max-w-6xl md:mx-auto px-6 scroll-mt-40">
+      <h1 class="text-3xl sm:text-5xl text-center font-semibold">My Skills</h1>
+      <div class="md:max-w-4xl md:mx-auto px-6">
+        <ul class="mt-16 grid grid-cols-3 gap-5 md:gap-12 place-items-center">
+          <li
+            class="flex flex-col items-center gap-3 hover:scale-125 transition duration-500"
+          >
+            <img
+              src="./img/html-5.png"
+              alt="html"
+              class="w-[55px] sm:w-[95px]"
+            />
+            <p class="text-sm sm:text-2xl font-medium">HTML5</p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-3 hover:scale-125 transition duration-500"
+          >
+            <img src="./img/css-3.png" alt="css" class="w-[55px] sm:w-[95px]" />
+            <p class="text-sm sm:text-2xl font-medium">CSS3</p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-3 hover:scale-125 transition duration-500"
+          >
+            <img
+              src="./img/Tailwind css.png"
+              alt="tailwind"
+              class="pt-5 w-[55px] sm:w-[95px]"
+            />
+            <p class="text-sm sm:text-2xl pt-3 font-medium">TailwindCSS</p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-3 hover:scale-125 transition duration-500"
+          >
+            <img
+              src="./img/js.png"
+              alt="javascript"
+              class="w-[55px] sm:w-[95px]"
+            />
+            <p class="text-sm sm:text-2xl font-medium">Javascript</p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-3 hover:scale-125 transition duration-500"
+          >
+            <img
+              src="./img/React Js.png"
+              alt="React"
+              class="w-[55px] sm:w-[95px]"
+            />
+            <p class="text-sm sm:text-2xl font-medium">Reactjs</p>
+          </li>
+          <li
+            class="flex flex-col items-center gap-3 hover:scale-125 transition duration-700"
+          >
+            <img src="./img/git.png" alt="git" class="w-[55px] sm:w-[95px]" />
+            <p class="text-sm sm:text-2xl font-medium">Git</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="edu" class="my-52 md:max-w-6xl md:mx-auto px-6 scroll-mt-56">
+      <h1 class="text-3xl sm:text-5xl text-center font-semibold mb-16">
+        Education
+      </h1>
+      <div
+        class="text-center md:max-w-2xl md:mx-auto px-4 py-3 text-lg sm:text-xl font-medium border-white border-2 rounded-lg hover:text-black hover:bg-white transition duration-500"
+      >
+        <h1 class="text-3xl mb-3">ISTA ADARISSA, Fés</h1>
+        <p>Diploma in full stack web development</p>
+        <p>2021-2023</p>
+      </div>
+    </section>
+    <section id="exp" class="my-52 md:max-w-6xl md:mx-auto px-6 scroll-mt-56">
+      <h1 class="text-3xl sm:text-5xl text-center font-semibold mb-16">
+        Experience
+      </h1>
+      <div
+        class="text-center px-4 py-3 text-lg sm:text-xl md:max-w-2xl md:mx-auto font-medium border-white border-2 rounded-lg hover:text-black hover:bg-white transition duration-500"
+      >
+        <h1 class="text-3xl mb-3">Digit-ON</h1>
+        <p>Internship as Junior Front end web Developer</p>
+        <p>04/2024-06/2024</p>
+      </div>
+    </section>
+
+    <section
+      id="cntct"
+      class="my-48 md:my-52 md:max-w-6xl md:mx-auto px-6 scroll-mt-56"
+    >
+      <h1 class="text-3xl sm:text-5xl text-center font-semibold">Contact Me</h1>
+
+      <div class="text-center my-4">
+        <div class="text-6xl mb-3">&#8595;</div>
+        <a
+          href="mailto:contact.marouanetamimi@gmail.com"
+          class="flex justify-center"
+          ><img src="./icons/email.png" alt="email" class="w-[70px]"
+        /></a>
+      </div>
+    </section>
+    <footer>
+      <div class="flex justify-center items-center gap-1 pt-10 pb-6 text-xl">
+        Coded with 🤍 by
+        <a
+          href="https://github.com/matrif01"
+          target="_blank"
+          class="font-semibold"
+          >Me</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
